@@ -9,22 +9,34 @@
 //prato vvvvvvvvvvv
 
 function escolherPrato(nomePrato) {
-    const botao = document.querySelector(`.${nomePrato}`).style.borderColor = "green";
-    console.log(botao);
+    const botaoSelecionado = document.querySelector('.selecionado');
+    if (botaoSelecionado != null){
+        botaoSelecionado.classList.remove('selecionado');
+    }
+    const botao = document.querySelector(`.${nomePrato}`);
+    botao.classList.add("selecionado");
 }
 
 //bebida vvvvvvvvvvv
 
 function escolherBebida(nomeBebida) {
-    const botao = document.querySelector(`.${nomeBebida}`).style.borderColor = "green";
-    console.log(botao)
+    const botaoSelecionado = document.querySelector('.selecionado');
+    if (botaoSelecionado != null){
+        botaoSelecionado.classList.remove('selecionado');
+    }
+    const botao = document.querySelector(`.${nomeBebida}`);
+    botao.classList.add("selecionado");
 }
 
 //sobremesa vvvvvvvvvvv
 
 function escolherSobremesa(nomeSobremesa) {
-    const botao = document.querySelector(`.${nomeSobremesa}`).style.borderColor = "green";
-    console.log(botao)
+    const botaoSelecionado = document.querySelector('.selecionado');
+    if (botaoSelecionado != null){
+        botaoSelecionado.classList.remove('selecionado');
+    }
+    const botao = document.querySelector(`.${nomeSobremesa}`);
+    botao.classList.add("selecionado");
 }
 
 //botão vvvvvvvvvvv
