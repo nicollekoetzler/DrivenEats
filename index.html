@@ -1,195 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DrivenEats</title>
-    <link rel="stylesheet" href="css/cssreset.css" />
-    <link rel="stylesheet" href="css/estilos.css" />
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DrivenEats</title>
+        <link rel="stylesheet" href="css/cssreset.css" />
+        <link rel="stylesheet" href="css/estilos.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&family=Righteous&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&family=Righteous&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-<div class="topo">
-<h1>DrivenEats</h1>
-<h2>Sua comida em 9 minutos</h2>
-</div>
-<!-- top bar -->
+    <body>
+        <div class="topo">
+            <h1>DrivenEats</h1>
+            <h2>Sua comida em 9 minutos</h2>
+        </div>
+        <!-- top bar -->
 
-<div class="titulosessao2">
-    <p class="fontetitulosessao">Primeiro, seu prato</p>
-</div>
+        <div class="titulosessao2">
+            <p class="fontetitulosessao">Primeiro, seu prato</p>
+        </div>
 
-<div class="container">
-    
-    <div class="container-movel">
-        <div id="shawarma" class="produto" onclick="escolherShawarma()">
-            <img class="fotocomida" src="imgs/shawarma.jpg">
-            <div class="textocomida">
-                <h3>Shawarma do Rei</h3>
-                <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
-                <p class="fontepreco">R$ 20,00</p>
-                <img id="vectorshawarma" class="vector" src="imgs/Vector.jpg" />
+        <div class="container">
+            
+            <div class="container-movel">
+                <div class="produto shawarma" onclick="escolherPrato('shawarma')">
+                    <img class="fotocomida" src="imgs/shawarma.jpg">
+                    <div class="textocomida">
+                        <h3>Shawarma do Rei</h3>
+                        <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
+                        <p class="fontepreco">R$ 20,00</p>
+                        <img id="vectorshawarma" class="vector" src="imgs/Vector.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="container-movel">
+                <div class="produto onigiri" onclick="escolherPrato('onigiri')">
+                    <img class="fotocomida" src="imgs/onigiri.jpg">
+                    <div class="textocomida">
+                        <h3>Onigiri</h3>
+                        <p class="fontedescricao">Onigiri com cogumelo Shitaki</p>
+                        <p class="fontepreco">R$ 18,90</p>
+                        <img id="vectoronigiri" class="vector" src="imgs/Vector.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="container-movel">
+                <div class="produto strogonoff" onclick="escolherPrato('strogonoff')">
+                    <img class="fotocomida" src="imgs/shawarma.jpg">
+                    <div class="textocomida">
+                        <h3>Strogonoff</h3>
+                        <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
+                        <p class="fontepreco">R$ 20,00</p>
+                        <img id="vectorstrogonoff" class="vector" src="imgs/Vector.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="container-movel">
+                <div class="produto salada" onclick="escolherPrato('salada')">
+                    <img class="fotocomida" src="imgs/shawarma.jpg">
+                    <div class="textocomida">
+                        <h3>Salada</h3>
+                        <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
+                        <p class="fontepreco">R$ 20,00</p>
+                        <img id="vectorsalada" class="vector" src="imgs/Vector.jpg" />
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-movel">
-        <div id="onigiri" class="produto" onclick="escolherOnigiri()">
-            <img class="fotocomida" src="imgs/onigiri.jpg">
-            <div class="textocomida">
-                <h3>Onigiri</h3>
-                <p class="fontedescricao">Onigiri com cogumelo Shitaki</p>
-                <p class="fontepreco">R$ 18,90</p>
-                <img id="vectoronigiri" class="vector" src="imgs/Vector.jpg" />
-            </div>
-        </div>
-    </div>
-    <div class="container-movel">
-        <div id="strogonoff" class="produto" onclick="escolherStrogonoff()">
-            <img class="fotocomida" src="imgs/shawarma.jpg">
-            <div class="textocomida">
-                <h3>Strogonoff</h3>
-                <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
-                <p class="fontepreco">R$ 20,00</p>
-                <img id="vectorstrogonoff" class="vector" src="imgs/Vector.jpg" />
-            </div>
-        </div>
-    </div>
-    <div class="container-movel">
-        <div id="salada" class="produto" onclick="escolherSalada()">
-            <img class="fotocomida" src="imgs/shawarma.jpg">
-            <div class="textocomida">
-                <h3>Salada</h3>
-                <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
-                <p class="fontepreco">R$ 20,00</p>
-                <img id="vectorsalada" class="vector" src="imgs/Vector.jpg" />
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- seu prato-->
+        <!-- seu prato-->
 
-<div class="titulosessao">
-    <p class="fontetitulosessao">Agora, sua bebida</p>
-</div>
+        <div class="titulosessao">
+            <p class="fontetitulosessao">Agora, sua bebida</p>
+        </div>
 
-<div class="container">
-    
-    <div class="container-movel margin">
-        <div id="mojito" class="produto" onclick="escolherMojito()">
-            <img class="fotocomida" src="imgs/mojito.jpg">
-            <div class="textocomida">
-                <h3>Mojito</h3>
-                <p class="fontedescricao">Rum, folhas de hortelã e limão</p>
-                <p class="fontepreco">R$ 14,90</p>
-                <img id="vectormojito" class="vector" src="imgs/Vector.jpg" />
+        <div class="container">
+            
+            <div class="container-movel margin">
+                <div class="produto mojito" onclick="escolherBebida('mojito')">
+                    <img class="fotocomida" src="imgs/mojito.jpg">
+                    <div class="textocomida">
+                        <h3>Mojito</h3>
+                        <p class="fontedescricao">Rum, folhas de hortelã e limão</p>
+                        <p class="fontepreco">R$ 14,90</p>
+                        <img id="vectormojito" class="vector" src="imgs/Vector.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="container-movel">
+                <div class="produto dolly" onclick="escolherBebida('dolly')">
+                    <img class="fotocomida" src="imgs/dolly.jpg">
+                    <div class="textocomida">
+                        <h3>Dolly Guaraná</h3>
+                        <p class="fontedescricao">É o sabor brasileiro</p>
+                        <p class="fontepreco">R$ 4,80</p>
+                        <img id="vectordolly" class="vector" src="imgs/Vector.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="container-movel">
+                <div class="produto schin" onclick="escolherBebida('schin')">
+                    <img class="fotocomida" src="imgs/schin.jpg">
+                    <div class="textocomida">
+                        <h3>Schin Ben 10</h3>
+                        <p class="fontedescricao">Refrigerante sabor Laranja e Limão</p>
+                        <p class="fontepreco">R$ 4,00</p>
+                        <img id="vectorschin" class="vector" src="imgs/Vector.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="container-movel">
+                <div class="produto bob" onclick="escolherBebida('bob')">
+                    <img class="fotocomida" src="imgs/bobesponja.jpg">
+                    <div class="textocomida">
+                        <h3>Leite Fermentado</h3>
+                        <p class="fontedescricao">1 unidade. Adoçado com suco de laranja</p>
+                        <p class="fontepreco">R$ 3,50</p>
+                        <img id="vectorbob" class="vector" src="imgs/Vector.jpg" />
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-movel">
-        <div id="dolly" class="produto" onclick="escolherDolly()">
-            <img class="fotocomida" src="imgs/dolly.jpg">
-            <div class="textocomida">
-                <h3>Dolly Guaraná</h3>
-                <p class="fontedescricao">É o sabor brasileiro</p>
-                <p class="fontepreco">R$ 4,80</p>
-                <img id="vectordolly" class="vector" src="imgs/Vector.jpg" />
-            </div>
-        </div>
-    </div>
-    <div class="container-movel">
-        <div id="schin" class="produto" onclick="escolherSchin()">
-            <img class="fotocomida" src="imgs/schin.jpg">
-            <div class="textocomida">
-                <h3>Schin Ben 10</h3>
-                <p class="fontedescricao">Refrigerante sabor Laranja e Limão</p>
-                <p class="fontepreco">R$ 4,00</p>
-                <img id="vectorschin" class="vector" src="imgs/Vector.jpg" />
-            </div>
-        </div>
-    </div>
-    <div class="container-movel">
-        <div id="bob" class="produto" onclick="escolherBob()">
-            <img class="fotocomida" src="imgs/bobesponja.jpg">
-            <div class="textocomida">
-                <h3>Leite Fermentado</h3>
-                <p class="fontedescricao">1 unidade. Adoçado com suco de laranja</p>
-                <p class="fontepreco">R$ 3,50</p>
-                <img id="vectorbob" class="vector" src="imgs/Vector.jpg" />
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- suaklkl bebida -->
+        <!-- suaklkl bebida -->
 
-<div class="titulosessao">
-    <p class="fontetitulosessao">Por fim, sua sobremesa</p>
-</div>
+        <div class="titulosessao">
+            <p class="fontetitulosessao">Por fim, sua sobremesa</p>
+        </div>
 
-<div class="container2">
-    
-    <div class="container-movel">
-        <div id="mousse" class="produto" onclick="escolherMousse()">
-            <img class="fotocomida" src="imgs/mousselimao.jpg">
-            <div class="textocomida">
-                <h3>Mousse de Limão</h3>
-                <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
-                <p class="fontepreco">R$ 12,50</p>
-                <img id="vectormousse" class="vector" src="imgs/Vector.jpg" />
+        <div class="container2">
+            
+            <div class="container-movel">
+                <div class="produto mousse" onclick="escolherSobremesa('mousse')">
+                    <img class="fotocomida" src="imgs/mousselimao.jpg">
+                    <div class="textocomida">
+                        <h3>Mousse de Limão</h3>
+                        <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
+                        <p class="fontepreco">R$ 12,50</p>
+                        <img id="vectormousse" class="vector" src="imgs/Vector.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="container-movel">
+                <div class="produto petit" onclick="escolherSobremesa('petit')">
+                    <img class="fotocomida" src="imgs/petitgateau.jpg">
+                    <div class="textocomida">
+                        <h3>Petit Gateau</h3>
+                        <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
+                        <p class="fontepreco">R$ 18,00</p>
+                        <img id="vectorpetit" class="vector" src="imgs/Vector.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="container-movel">
+                <div class="produto shawarma2" onclick="escolherSobremesa('shawarma2')">
+                    <img class="fotocomida" src="imgs/shawarma.jpg">
+                    <div class="textocomida">
+                        <h3>Sobremesa 3</h3>
+                        <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
+                        <p class="fontepreco">R$ 20,00</p>
+                        <img id="vectorshawarma2" class="vector" src="imgs/Vector.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="container-movel">
+                <div class="produto shawarma3" onclick="escolherSobremesa('shawarma3')">
+                    <img class="fotocomida" src="imgs/shawarma.jpg">
+                    <div class="textocomida">
+                        <h3>Shawarma do Rei</h3>
+                        <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
+                        <p class="fontepreco">R$ 20,00</p>
+                        <img id="vectorshawarma3" class="vector" src="imgs/Vector.jpg" />
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-movel">
-        <div id="petit" class="produto" onclick="escolherPetit()">
-            <img class="fotocomida" src="imgs/petitgateau.jpg">
-            <div class="textocomida">
-                <h3>Petit Gateau</h3>
-                <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
-                <p class="fontepreco">R$ 18,00</p>
-                <img id="vectorpetit" class="vector" src="imgs/Vector.jpg" />
-            </div>
-        </div>
-    </div>
-    <div class="container-movel">
-        <div id="shawarma2" class="produto" onclick="escolherShawarma2()">
-            <img class="fotocomida" src="imgs/shawarma.jpg">
-            <div class="textocomida">
-                <h3>Sobremesa 3</h3>
-                <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
-                <p class="fontepreco">R$ 20,00</p>
-                <img id="vectorshawarma2" class="vector" src="imgs/Vector.jpg" />
-            </div>
-        </div>
-    </div>
-    <div class="container-movel">
-        <div id="shawarma3" class="produto" onclick="escolherShawarma3()">
-            <img class="fotocomida" src="imgs/shawarma.jpg">
-            <div class="textocomida">
-                <h3>Shawarma do Rei</h3>
-                <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
-                <p class="fontepreco">R$ 20,00</p>
-                <img id="vectorshawarma3" class="vector" src="imgs/Vector.jpg" />
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- sua sobremesa -->
-<!-- corpo -->
+        <!-- sua sobremesa -->
+        <!-- corpo -->
 
 
-<div class="fundo">
-    <button id="botao" class="botao" onclick="enviarMensagem()">
-        <p class="fontebotao">Selecione os 3 itens<br>para fechar o pedido</p>
-    </button>
-</div>
-<!-- fundo -->
-<script src="js/scripts.js"></script>
-</body>
+        <div class="fundo">
+            <button id="botao" class="botao" onclick="enviarMensagem()">
+                <p class="fontebotao">Selecione os 3 itens<br>para fechar o pedido</p>
+            </button>
+        </div>
+        <!-- fundo -->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
