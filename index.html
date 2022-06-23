@@ -24,13 +24,13 @@
             <p class="fontetitulosessao">Primeiro, seu prato</p>
         </div>
 
-        <div class="container">
+        <div class="container prato">
             
             <div class="container-movel">
-                <div class="produto shawarma" onclick="escolherPrato('shawarma')">
+                <div class="produto shawarma" onclick="escolherPrato(this)">
                     <img class="fotocomida" src="imgs/shawarma.jpg">
                     <div class="textocomida">
-                        <h3>Shawarma do Rei</h3>
+                        <h3 class="titulo" >Shawarma do Rei</h3>
                         <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
                         <p class="fontepreco">R$ 20,00</p>
                         <img id="vectorshawarma" class="vector" src="imgs/Vector.jpg" />
@@ -38,10 +38,10 @@
                 </div>
             </div>
             <div class="container-movel">
-                <div class="produto onigiri" onclick="escolherPrato('onigiri')">
+                <div class="produto onigiri" onclick="escolherPrato(this)">
                     <img class="fotocomida" src="imgs/onigiri.jpg">
                     <div class="textocomida">
-                        <h3>Onigiri</h3>
+                        <h3 class="titulo">Onigiri</h3>
                         <p class="fontedescricao">Onigiri com cogumelo Shitaki</p>
                         <p class="fontepreco">R$ 18,90</p>
                         <img id="vectoronigiri" class="vector" src="imgs/Vector.jpg" />
@@ -49,10 +49,10 @@
                 </div>
             </div>
             <div class="container-movel">
-                <div class="produto strogonoff" onclick="escolherPrato('strogonoff')">
+                <div class="produto strogonoff" onclick="escolherPrato(this)">
                     <img class="fotocomida" src="imgs/shawarma.jpg">
                     <div class="textocomida">
-                        <h3>Strogonoff</h3>
+                        <h3 class="titulo">Strogonoff</h3>
                         <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
                         <p class="fontepreco">R$ 20,00</p>
                         <img id="vectorstrogonoff" class="vector" src="imgs/Vector.jpg" />
@@ -60,10 +60,10 @@
                 </div>
             </div>
             <div class="container-movel">
-                <div class="produto salada" onclick="escolherPrato('salada')">
+                <div class="produto salada" onclick="escolherPrato(this)">
                     <img class="fotocomida" src="imgs/shawarma.jpg">
                     <div class="textocomida">
-                        <h3>Salada</h3>
+                        <h3 class="titulo">Salada</h3>
                         <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
                         <p class="fontepreco">R$ 20,00</p>
                         <img id="vectorsalada" class="vector" src="imgs/Vector.jpg" />
@@ -78,13 +78,13 @@
             <p class="fontetitulosessao">Agora, sua bebida</p>
         </div>
 
-        <div class="container">
+        <div class="container bebida">
             
             <div class="container-movel margin">
-                <div class="produto mojito" onclick="escolherBebida('mojito')">
+                <div class="produto mojito" onclick="escolherBebida(this)">
                     <img class="fotocomida" src="imgs/mojito.jpg">
                     <div class="textocomida">
-                        <h3>Mojito</h3>
+                        <h3 class="titulo">Mojito</h3>
                         <p class="fontedescricao">Rum, folhas de hortelã e limão</p>
                         <p class="fontepreco">R$ 14,90</p>
                         <img id="vectormojito" class="vector" src="imgs/Vector.jpg" />
@@ -92,10 +92,10 @@
                 </div>
             </div>
             <div class="container-movel">
-                <div class="produto dolly" onclick="escolherBebida('dolly')">
+                <div class="produto dolly" onclick="escolherBebida(this)">
                     <img class="fotocomida" src="imgs/dolly.jpg">
                     <div class="textocomida">
-                        <h3>Dolly Guaraná</h3>
+                        <h3 class="titulo">Dolly Guaraná</h3>
                         <p class="fontedescricao">É o sabor brasileiro</p>
                         <p class="fontepreco">R$ 4,80</p>
                         <img id="vectordolly" class="vector" src="imgs/Vector.jpg" />
@@ -103,10 +103,10 @@
                 </div>
             </div>
             <div class="container-movel">
-                <div class="produto schin" onclick="escolherBebida('schin')">
+                <div class="produto schin" onclick="escolherBebida(this)">
                     <img class="fotocomida" src="imgs/schin.jpg">
                     <div class="textocomida">
-                        <h3>Schin Ben 10</h3>
+                        <h3 class="titulo">Schin Ben 10</h3>
                         <p class="fontedescricao">Refrigerante sabor Laranja e Limão</p>
                         <p class="fontepreco">R$ 4,00</p>
                         <img id="vectorschin" class="vector" src="imgs/Vector.jpg" />
@@ -114,10 +114,10 @@
                 </div>
             </div>
             <div class="container-movel">
-                <div class="produto bob" onclick="escolherBebida('bob')">
+                <div class="produto bob" onclick="escolherBebida(this)">
                     <img class="fotocomida" src="imgs/bobesponja.jpg">
                     <div class="textocomida">
-                        <h3>Leite Fermentado</h3>
+                        <h3 class="titulo">Leite Fermentado</h3>
                         <p class="fontedescricao">1 unidade. Adoçado com suco de laranja</p>
                         <p class="fontepreco">R$ 3,50</p>
                         <img id="vectorbob" class="vector" src="imgs/Vector.jpg" />
@@ -132,13 +132,13 @@
             <p class="fontetitulosessao">Por fim, sua sobremesa</p>
         </div>
 
-        <div class="container2">
+        <div class="container2 sobremesa">
             
             <div class="container-movel">
-                <div class="produto mousse" onclick="escolherSobremesa('mousse')">
+                <div class="produto mousse" onclick="escolherSobremesa(this)">
                     <img class="fotocomida" src="imgs/mousselimao.jpg">
                     <div class="textocomida">
-                        <h3>Mousse de Limão</h3>
+                        <h3 class="titulo">Mousse de Limão</h3>
                         <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
                         <p class="fontepreco">R$ 12,50</p>
                         <img id="vectormousse" class="vector" src="imgs/Vector.jpg" />
@@ -146,10 +146,10 @@
                 </div>
             </div>
             <div class="container-movel">
-                <div class="produto petit" onclick="escolherSobremesa('petit')">
+                <div class="produto petit" onclick="escolherSobremesa(this)">
                     <img class="fotocomida" src="imgs/petitgateau.jpg">
                     <div class="textocomida">
-                        <h3>Petit Gateau</h3>
+                        <h3 class="titulo">Petit Gateau</h3>
                         <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
                         <p class="fontepreco">R$ 18,00</p>
                         <img id="vectorpetit" class="vector" src="imgs/Vector.jpg" />
@@ -157,10 +157,10 @@
                 </div>
             </div>
             <div class="container-movel">
-                <div class="produto shawarma2" onclick="escolherSobremesa('shawarma2')">
+                <div class="produto shawarma2" onclick="escolherSobremesa(this)">
                     <img class="fotocomida" src="imgs/shawarma.jpg">
                     <div class="textocomida">
-                        <h3>Sobremesa 3</h3>
+                        <h3 class="titulo">Sobremesa 3</h3>
                         <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
                         <p class="fontepreco">R$ 20,00</p>
                         <img id="vectorshawarma2" class="vector" src="imgs/Vector.jpg" />
@@ -168,10 +168,10 @@
                 </div>
             </div>
             <div class="container-movel">
-                <div class="produto shawarma3" onclick="escolherSobremesa('shawarma3')">
+                <div class="produto shawarma3" onclick="escolherSobremesa(this)">
                     <img class="fotocomida" src="imgs/shawarma.jpg">
                     <div class="textocomida">
-                        <h3>Shawarma do Rei</h3>
+                        <h3 class="titulo">Shawarma do Rei</h3>
                         <p class="fontedescricao">Pão sírio, pasta de alho, alface, cebola...</p>
                         <p class="fontepreco">R$ 20,00</p>
                         <img id="vectorshawarma3" class="vector" src="imgs/Vector.jpg" />

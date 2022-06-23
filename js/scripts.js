@@ -1,42 +1,47 @@
-/* function escolherShawarma() {
-    document.getElementById("shawarma").style.borderColor = "green";
-    document.getElementById("onigiri").style.borderColor = "white";
-    
-    prato = "Shawarma";
-    finalizarPedido();
-} */
+let prato;
+let bebida;
+let sobremesa;
 
+ 
 //prato vvvvvvvvvvv
 
-function escolherPrato(nomePrato) {
-    const botaoSelecionado = document.querySelector('.selecionado');
+function escolherPrato(elemento) {
+    const botaoSelecionado = document.querySelector('.prato .selecionado');
+    // classe prato para pegar os selecionados apenas descendentes de prato
     if (botaoSelecionado != null){
         botaoSelecionado.classList.remove('selecionado');
     }
-    const botao = document.querySelector(`.${nomePrato}`);
-    botao.classList.add("selecionado");
+    elemento.classList.add("selecionado");
+
+    prato = elemento.querySelector('.titulo').innerHTML
+    finalizarPedido();
 }
 
 //bebida vvvvvvvvvvv
 
-function escolherBebida(nomeBebida) {
-    const botaoSelecionado = document.querySelector('.selecionado');
+function escolherBebida(elemento) {
+    const botaoSelecionado = document.querySelector('.bebida .selecionado');
     if (botaoSelecionado != null){
         botaoSelecionado.classList.remove('selecionado');
     }
-    const botao = document.querySelector(`.${nomeBebida}`);
-    botao.classList.add("selecionado");
+    elemento.classList.add("selecionado");
+
+    bebida = elemento.querySelector('.titulo').innerHTML
+    finalizarPedido();
 }
 
 //sobremesa vvvvvvvvvvv
 
-function escolherSobremesa(nomeSobremesa) {
-    const botaoSelecionado = document.querySelector('.selecionado');
+function escolherSobremesa(elemento) {
+    const botaoSelecionado = document.querySelector('.sobremesa .selecionado');
     if (botaoSelecionado != null){
         botaoSelecionado.classList.remove('selecionado');
     }
-    const botao = document.querySelector(`.${nomeSobremesa}`);
-    botao.classList.add("selecionado");
+    elemento.classList.add("selecionado");
+
+    sobremesa = elemento.querySelector('.titulo').innerHTML
+    console.log(sobremesa)
+    finalizarPedido();
 }
 
 //botão vvvvvvvvvvv
