@@ -1,6 +1,9 @@
 let prato;
 let bebida;
 let sobremesa;
+let precoPrato;
+let precoBebida;
+let precoSobremesa;
 
  
 //prato vvvvvvvvvvv
@@ -14,6 +17,7 @@ function escolherPrato(elemento) {
     elemento.classList.add("selecionado");
 
     prato = elemento.querySelector('.titulo').innerHTML
+    precoPrato = elemento.querySelector('.fontepreco').innerHTML
     finalizarPedido();
 }
 
@@ -27,6 +31,7 @@ function escolherBebida(elemento) {
     elemento.classList.add("selecionado");
 
     bebida = elemento.querySelector('.titulo').innerHTML
+    precoBebida = elemento.querySelector('.fontepreco').innerHTML
     finalizarPedido();
 }
 
@@ -40,7 +45,7 @@ function escolherSobremesa(elemento) {
     elemento.classList.add("selecionado");
 
     sobremesa = elemento.querySelector('.titulo').innerHTML
-    console.log(sobremesa)
+    precoSobremesa = elemento.querySelector('.fontepreco').innerHTML
     finalizarPedido();
 }
 
