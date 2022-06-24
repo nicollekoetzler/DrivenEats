@@ -5,7 +5,15 @@ let precoPrato;
 let precoBebida;
 let precoSobremesa;
 
- 
+ function converterNumero(precoString){
+
+    let preco = precoString.replace("R$ ", "");
+    preco = preco.replace(",", ".");
+    preco = Number(preco) * 100;
+
+    return preco;
+ }
+
 //prato vvvvvvvvvvv
 
 function escolherPrato(elemento) {
@@ -19,6 +27,9 @@ function escolherPrato(elemento) {
     prato = elemento.querySelector('.titulo').innerHTML
     precoPrato = elemento.querySelector('.fontepreco').innerHTML
     finalizarPedido();
+
+    precoPrato = converterNumero(precoPrato);
+    console.log(precoPrato)
 }
 
 //bebida vvvvvvvvvvv
@@ -33,6 +44,9 @@ function escolherBebida(elemento) {
     bebida = elemento.querySelector('.titulo').innerHTML
     precoBebida = elemento.querySelector('.fontepreco').innerHTML
     finalizarPedido();
+
+    precoBebida = converterNumero(precoBebida);
+    console.log(precoBebida)
 }
 
 //sobremesa vvvvvvvvvvv
@@ -47,6 +61,9 @@ function escolherSobremesa(elemento) {
     sobremesa = elemento.querySelector('.titulo').innerHTML
     precoSobremesa = elemento.querySelector('.fontepreco').innerHTML
     finalizarPedido();
+
+    precoSobremesa = converterNumero(precoSobremesa);
+    console.log(precoSobremesa)
 }
 
 //botão vvvvvvvvvvv
@@ -58,10 +75,20 @@ function finalizarPedido() {
     }
 }
 
+
+
 function enviarMensagem() {
-    let mensagem;
+
+    let valorTotal = precoPrato + precoBebida + precoSobremesa;
+
     if(prato!=null && bebida!=null && sobremesa!=null) {
-        mensagem = "Olá, gostaria de fazer o pedido: Prato: " + prato + " Bebida: " + bebida + " Sobremesa: " + sobremesa;
+        let mensagem = `Olá, gostaria de fazer o pedido: 
+        - Prato: ${prato} 
+        - Bebida: ${bebida} 
+        - Sobremesa: ${sobremesa}
+        
+        Total: R$ ${(valorTotal / 100).toFixed(2)}
+        `
         window.open("https://wa.me/47991082882?text=" + mensagem);
     }
 }
